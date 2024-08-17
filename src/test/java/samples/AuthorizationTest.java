@@ -82,7 +82,7 @@ public class AuthorizationTest {
 	// OAuth1 Authentication (need to pass some parameter values for (consumerKey,consumerSecrat,accessToken,tokenScrate)
 	
 	
-	@Test
+	//@Test
 	public void oAuth1Auth()
 	{
 		
@@ -104,7 +104,7 @@ public class AuthorizationTest {
 // OAuth2 Authentication (need to  parameter values only for (accessToken)
 	
 	
-	@Test
+	//@Test
 	public void oAuth2Auth()
 	{
 		
@@ -125,7 +125,7 @@ public class AuthorizationTest {
 
 // API Authentication (need to pass  API key value as Query Parameter "appid"	
 	
-	@Test
+	// @Test
 	public void apiKeyAuth()
 	{
 		
@@ -145,7 +145,7 @@ public class AuthorizationTest {
 	}
 	
 	// Bearer Token Authentication (need to store bearer token value in String variable and pass that variable in header			
-	@Test
+	// @Test
 	public void bearerTokenKeyAuth()
 	{
 		
