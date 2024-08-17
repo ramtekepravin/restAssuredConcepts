@@ -1,0 +1,186 @@
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>restAssured</groupId>
+  <artifactId>restAssuredTestNG</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <dependencies>
+         <!--- RestAssured Dependencies -->
+  
+  <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+  <dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>5.4.0</version>
+    <scope>test</scope>
+  </dependency>
+
+  <!-- https://mvnrepository.com/artifact/io.rest-assured/json-path -->
+  <dependency>
+    <groupId>org.hamcrest</groupId>
+    <artifactId>java-hamcrest</artifactId>
+    <version>2.0.0.0</version>
+    <scope>test</scope>
+  </dependency>
+  
+  <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-all -->
+  <dependency>
+    <groupId>org.hamcrest</groupId>
+    <artifactId>hamcrest-all</artifactId>
+    <version>1.3</version>
+    <scope>test</scope>
+  </dependency>
+
+  <!-- https://mvnrepository.com/artifact/com.github.scribejava/scribejava-apis -->
+  <dependency>
+    <groupId>com.github.scribejava</groupId>
+    <artifactId>scribejava-apis</artifactId>
+    <version>8.3.3</version>
+    <scope>runtime</scope>
+  </dependency>
+
+  <!-- https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path -->
+  <dependency>
+    <groupId>com.jayway.jsonpath</groupId>
+    <artifactId>json-path</artifactId>
+    <version>2.9.0</version>
+  </dependency>
+
+  <!-- https://mvnrepository.com/artifact/org.json/json -->
+  <dependency>
+    <groupId>org.json</groupId>
+    <artifactId>json</artifactId>
+    <version>20240303</version>
+  </dependency>
+
+  <!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>json-schema-validator</artifactId>
+    <version>5.5.0</version>
+</dependency>
+
+  <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+  <dependency>
+    <groupId>com.google.code.gson</groupId>
+    <artifactId>gson</artifactId>
+    <version>2.11.0</version>
+  </dependency>
+
+  <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+  <dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.17.2</version>
+  </dependency>
+
+  <!-- Fakerclass to generate random data Dependency -->
+
+  <dependency>
+    <groupId>com.github.javafaker</groupId>
+    <artifactId>javafaker</artifactId>
+    <version>1.0.2</version>
+  </dependency>
+
+  <!-- Cucumber Dependency -->
+  <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+  <dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>7.18.0</version>
+  </dependency>
+ 
+  <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
+  <dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-core</artifactId>
+    <version>7.18.0</version>
+  </dependency>
+  
+  <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+  <dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>7.18.0</version>
+    <scope>test</scope>
+  </dependency>
+  
+  <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
+  <dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-picocontainer</artifactId>
+    <version>7.18.0</version>
+  </dependency>
+  
+  <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-gherkin -->
+  <dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-gherkin</artifactId>
+    <version>7.18.0</version>
+  </dependency>
+
+
+  <!-- Selenium WebDriver Dependency -->
+  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+  <dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.23.0</version>
+  </dependency>
+ 
+  <!-- Selenium ChromeDriver Dependency -->
+  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+  <dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-chrome-driver</artifactId>
+    <version>4.23.0</version>
+  </dependency>
+
+  <!-- Selenium FirefoxDriver Dependency -->
+  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver -->
+  <dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-firefox-driver</artifactId>
+    <version>4.23.0</version>
+  </dependency>
+
+  <!-- XML Dependency -->
+  <!-- https://mvnrepository.com/artifact/xml-apis/xml-apis -->
+  <dependency>
+    <groupId>xml-apis</groupId>
+    <artifactId>xml-apis</artifactId>
+    <version>2.0.2</version>
+  </dependency>
+
+  <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+  <dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>5.2.2</version>
+  </dependency>
+
+  <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+  <dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>5.2.2</version>
+  </dependency>
+
+  <!-- TestNG Dependency -->
+  <dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.10.2</version>
+    <scope>test</scope>
+  </dependency>
+
+  <!-- Extent Report Dependency -->
+  <dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.1.2</version>
+  </dependency>
+  
+  </dependencies>
+  
+</project>
