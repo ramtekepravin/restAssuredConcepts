@@ -1,17 +1,317 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="1" failed="3" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-16T15:49:04 IST" name="Default suite" finished-at="2024-08-16T15:49:04 IST" duration-ms="510">
+  <suite started-at="2024-08-24T12:29:08 IST" name="Default suite" finished-at="2024-08-24T12:29:14 IST" duration-ms="6087">
     <groups>
     </groups>
-    <test started-at="2024-08-16T15:49:04 IST" name="Default test" finished-at="2024-08-16T15:49:04 IST" duration-ms="510">
-      <class name="samples.FakerClassDataGenerate">
-        <test-method signature="fakerDataGeneration()[pri:0, instance:samples.FakerClassDataGenerate@1033576a]" started-at="2024-08-16T15:49:04 IST" name="fakerDataGeneration" finished-at="2024-08-16T15:49:04 IST" duration-ms="396" status="PASS">
+    <test started-at="2024-08-24T12:29:08 IST" name="Default test" finished-at="2024-08-24T12:29:14 IST" duration-ms="6087">
+      <class name="samples.UsingDataProviderwithoutExcelUtility">
+        <test-method signature="getUserList()[pri:1, instance:samples.UsingDataProviderwithoutExcelUtility@17fc391b]" started-at="2024-08-24T12:29:08 IST" name="getUserList" finished-at="2024-08-24T12:29:12 IST" duration-ms="4201" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fakerDataGeneration -->
-      </class> <!-- samples.FakerClassDataGenerate -->
+        </test-method> <!-- getUserList -->
+        <test-method signature="createUser(java.lang.String,java.lang.String)[pri:2, instance:samples.UsingDataProviderwithoutExcelUtility@17fc391b]" started-at="2024-08-24T12:29:13 IST" name="createUser" data-provider="getData" finished-at="2024-08-24T12:29:14 IST" duration-ms="531" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sujan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[QA]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.fasterxml.jackson.databind.exc.InvalidDefinitionException">
+            <message>
+              <![CDATA[No serializer found for class com.jayway.jsonpath.internal.JsonContext and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class com.jayway.jsonpath.internal.JsonContext and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS)
+at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)
+at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1330)
+at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:414)
+at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.failForEmpty(UnknownSerializer.java:53)
+at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.serialize(UnknownSerializer.java:30)
+at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3364)
+at com.fasterxml.jackson.databind.ObjectMapper$writeValue.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+at io.restassured.internal.mapping.Jackson2Mapper.serialize(Jackson2Mapper.groovy:53)
+at io.restassured.internal.mapping.Jackson2Mapper.serialize(Jackson2Mapper.groovy)
+at io.restassured.mapper.ObjectMapper$serialize.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+at io.restassured.internal.mapping.ObjectMapping.serializeWithJackson2(ObjectMapping.groovy:217)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite$StaticMetaMethodSiteNoUnwrapNoCoerce.invoke(StaticMetaMethodSite.java:153)
+at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite.callStatic(StaticMetaMethodSite.java:102)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)
+at io.restassured.internal.mapping.ObjectMapping.serialize(ObjectMapping.groovy:154)
+at io.restassured.internal.mapping.ObjectMapping$serialize.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+at io.restassured.internal.RequestSpecificationImpl.body(RequestSpecificationImpl.groovy:770)
+at samples.UsingDataProviderwithoutExcelUtility.createUser(UsingDataProviderwithoutExcelUtility.java:52)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.fasterxml.jackson.databind.exc.InvalidDefinitionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method signature="createUser(java.lang.String,java.lang.String)[pri:2, instance:samples.UsingDataProviderwithoutExcelUtility@17fc391b]" started-at="2024-08-24T12:29:14 IST" name="createUser" data-provider="getData" finished-at="2024-08-24T12:29:14 IST" duration-ms="14" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lata]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Lead]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.fasterxml.jackson.databind.exc.InvalidDefinitionException">
+            <message>
+              <![CDATA[No serializer found for class com.jayway.jsonpath.internal.JsonContext and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class com.jayway.jsonpath.internal.JsonContext and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS)
+at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)
+at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1330)
+at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:414)
+at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.failForEmpty(UnknownSerializer.java:53)
+at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.serialize(UnknownSerializer.java:30)
+at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3364)
+at com.fasterxml.jackson.databind.ObjectMapper$writeValue.call(Unknown Source)
+at io.restassured.internal.mapping.Jackson2Mapper.serialize(Jackson2Mapper.groovy:53)
+at io.restassured.internal.mapping.Jackson2Mapper.serialize(Jackson2Mapper.groovy)
+at io.restassured.mapper.ObjectMapper$serialize.call(Unknown Source)
+at io.restassured.internal.mapping.ObjectMapping.serializeWithJackson2(ObjectMapping.groovy:217)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite$StaticMetaMethodSiteNoUnwrapNoCoerce.invoke(StaticMetaMethodSite.java:153)
+at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite.callStatic(StaticMetaMethodSite.java:102)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)
+at io.restassured.internal.mapping.ObjectMapping.serialize(ObjectMapping.groovy:154)
+at io.restassured.internal.mapping.ObjectMapping$serialize.call(Unknown Source)
+at io.restassured.internal.RequestSpecificationImpl.body(RequestSpecificationImpl.groovy:770)
+at samples.UsingDataProviderwithoutExcelUtility.createUser(UsingDataProviderwithoutExcelUtility.java:52)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.fasterxml.jackson.databind.exc.InvalidDefinitionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method signature="createUser(java.lang.String,java.lang.String)[pri:2, instance:samples.UsingDataProviderwithoutExcelUtility@17fc391b]" started-at="2024-08-24T12:29:14 IST" name="createUser" data-provider="getData" finished-at="2024-08-24T12:29:14 IST" duration-ms="8" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jaya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CTO]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.fasterxml.jackson.databind.exc.InvalidDefinitionException">
+            <message>
+              <![CDATA[No serializer found for class com.jayway.jsonpath.internal.JsonContext and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class com.jayway.jsonpath.internal.JsonContext and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS)
+at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)
+at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1330)
+at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:414)
+at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.failForEmpty(UnknownSerializer.java:53)
+at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.serialize(UnknownSerializer.java:30)
+at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341)
+at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3364)
+at com.fasterxml.jackson.databind.ObjectMapper$writeValue.call(Unknown Source)
+at io.restassured.internal.mapping.Jackson2Mapper.serialize(Jackson2Mapper.groovy:53)
+at io.restassured.internal.mapping.Jackson2Mapper.serialize(Jackson2Mapper.groovy)
+at io.restassured.mapper.ObjectMapper$serialize.call(Unknown Source)
+at io.restassured.internal.mapping.ObjectMapping.serializeWithJackson2(ObjectMapping.groovy:217)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite$StaticMetaMethodSiteNoUnwrapNoCoerce.invoke(StaticMetaMethodSite.java:153)
+at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite.callStatic(StaticMetaMethodSite.java:102)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)
+at io.restassured.internal.mapping.ObjectMapping.serialize(ObjectMapping.groovy:154)
+at io.restassured.internal.mapping.ObjectMapping$serialize.call(Unknown Source)
+at io.restassured.internal.RequestSpecificationImpl.body(RequestSpecificationImpl.groovy:770)
+at samples.UsingDataProviderwithoutExcelUtility.createUser(UsingDataProviderwithoutExcelUtility.java:52)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.fasterxml.jackson.databind.exc.InvalidDefinitionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method signature="updateUser()[pri:3, instance:samples.UsingDataProviderwithoutExcelUtility@17fc391b]" started-at="2024-08-24T12:29:14 IST" name="updateUser" finished-at="2024-08-24T12:29:14 IST" depends-on-methods="samples.UsingDataProviderwithoutExcelUtility.createUser" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method samples.UsingDataProviderwithoutExcelUtility.updateUser() on instance samples.UsingDataProviderwithoutExcelUtility@17fc391b depends on not successfully finished methods 
+[samples.UsingDataProviderwithoutExcelUtility.createUser() on instance samples.UsingDataProviderwithoutExcelUtility@17fc391b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method samples.UsingDataProviderwithoutExcelUtility.updateUser() on instance samples.UsingDataProviderwithoutExcelUtility@17fc391b depends on not successfully finished methods 
+[samples.UsingDataProviderwithoutExcelUtility.createUser() on instance samples.UsingDataProviderwithoutExcelUtility@17fc391b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUser -->
+        <test-method signature="deleteUser()[pri:4, instance:samples.UsingDataProviderwithoutExcelUtility@17fc391b]" started-at="2024-08-24T12:29:14 IST" name="deleteUser" finished-at="2024-08-24T12:29:14 IST" depends-on-methods="samples.UsingDataProviderwithoutExcelUtility.createUser" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method samples.UsingDataProviderwithoutExcelUtility.deleteUser() on instance samples.UsingDataProviderwithoutExcelUtility@17fc391b depends on not successfully finished methods 
+[samples.UsingDataProviderwithoutExcelUtility.createUser() on instance samples.UsingDataProviderwithoutExcelUtility@17fc391b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method samples.UsingDataProviderwithoutExcelUtility.deleteUser() on instance samples.UsingDataProviderwithoutExcelUtility@17fc391b depends on not successfully finished methods 
+[samples.UsingDataProviderwithoutExcelUtility.createUser() on instance samples.UsingDataProviderwithoutExcelUtility@17fc391b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
+      </class> <!-- samples.UsingDataProviderwithoutExcelUtility -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
