@@ -118,6 +118,13 @@
     <artifactId>cucumber-gherkin</artifactId>
     <version>7.18.0</version>
   </dependency>
+  
+  <dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+
 
 
   <!-- Selenium WebDriver Dependency -->
@@ -179,6 +186,44 @@
     <groupId>com.aventstack</groupId>
     <artifactId>extentreports</artifactId>
     <version>5.1.2</version>
+  </dependency>
+  
+  <!-- Logger 4j Dependency -->
+  
+  <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+  <dependency>
+    <groupId>log4j</groupId>
+    <artifactId>log4j</artifactId>
+    <version>1.2.17</version>
+  </dependency>
+
+  <dependency>
+	<groupId>com.github.dzieciou.testing</groupId>
+	<artifactId>curl-logger</artifactId>
+	<version>2.0.1</version>
+  </dependency>
+		
+<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+  <dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-simple</artifactId>
+    <version>2.0.16</version>
+    <scope>test</scope>
+  </dependency>
+
+<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+  <dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+    <version>2.0.16</version>
+  </dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-reload4j -->
+  <dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-reload4j</artifactId>
+    <version>2.0.16</version>
+    <scope>test</scope>
   </dependency>
   
   </dependencies>

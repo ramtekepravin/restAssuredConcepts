@@ -14,7 +14,7 @@ public class FileuploadDemo {
 	    @Test
 		public void SinglefileUpload()
 		{
-		   File myfile = new File("E:\\My Automation\\RestAssured\\Fileupload\\Test1.txt");
+		   File myfile = new File("F:\\My Automation\\RestAssured\\Fileupload\\Test1.txt");
 		   
 			RestAssured
 			
@@ -23,11 +23,11 @@ public class FileuploadDemo {
 	            .contentType("multipart/form-data")
 	            
 	           .when() 
-	             .post("https://www.google.com/upload")
+	             .post("https://postman-echo.com/post")
 	             
 	            .then()
-	              .statusCode(200)
-	              .body("fileName",Matchers.equalTo("Test1.txt"));
+	              .statusCode(200) 
+	              .body("fileName", Matchers.equalTo("Text1.txt"));
 	              		
 		}
 		
@@ -36,17 +36,17 @@ public class FileuploadDemo {
 		@Test
 		public void MultiplefileUpload()
 		{
-		   File myfile1 = new File("E:\\My Automation\\RestAssured\\Fileupload\\Test1.txt");
-		   File myfile2 = new File("E:\\My Automation\\RestAssured\\Fileupload\\Test2.txt");
+		   File myfile1 = new File("F:\\My Automation\\RestAssured\\Fileupload\\Test1.txt");
+		   File myfile2 = new File("F:\\My Automation\\RestAssured\\Fileupload\\Test2.txt");
 			RestAssured
 			
 			 .given()
-	            .multiPart("files", "myfile12")
-	            .multiPart("files", "myfile")
+	            .multiPart("files", "myfile1")
+	            .multiPart("files", "myfile2")
 	            .contentType("multipart/form-data")
 	            
 	           .when() 
-	             .post("https://www.google.com/upload")
+	             .post("https://postman-echo.com/post")
 	             
 	            .then()
 	              .statusCode(200)

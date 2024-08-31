@@ -1,17 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="1" failed="3" skipped="2">
+<testng-results ignored="0" total="31" passed="24" failed="5" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-24T12:29:08 IST" name="Default suite" finished-at="2024-08-24T12:29:14 IST" duration-ms="6087">
+  <suite started-at="2024-08-31T12:22:04 IST" name="Suite" finished-at="2024-08-31T12:22:24 IST" duration-ms="20540">
     <groups>
     </groups>
-    <test started-at="2024-08-24T12:29:08 IST" name="Default test" finished-at="2024-08-24T12:29:14 IST" duration-ms="6087">
-      <class name="samples.UsingDataProviderwithoutExcelUtility">
-        <test-method signature="getUserList()[pri:1, instance:samples.UsingDataProviderwithoutExcelUtility@17fc391b]" started-at="2024-08-24T12:29:08 IST" name="getUserList" finished-at="2024-08-24T12:29:12 IST" duration-ms="4201" status="PASS">
+    <test started-at="2024-08-31T12:22:04 IST" name="Test" finished-at="2024-08-31T12:22:24 IST" duration-ms="20540">
+      <class name="samples.UsingExternalJsonFile">
+        <test-method signature="getUserList()[pri:1, instance:samples.UsingExternalJsonFile@5a5a729f]" started-at="2024-08-31T12:22:23 IST" name="getUserList" finished-at="2024-08-31T12:22:23 IST" duration-ms="103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUserList -->
-        <test-method signature="createUser(java.lang.String,java.lang.String)[pri:2, instance:samples.UsingDataProviderwithoutExcelUtility@17fc391b]" started-at="2024-08-24T12:29:13 IST" name="createUser" data-provider="getData" finished-at="2024-08-24T12:29:14 IST" duration-ms="531" status="FAIL">
+        <test-method signature="createUser()[pri:2, instance:samples.UsingExternalJsonFile@5a5a729f]" started-at="2024-08-31T12:22:23 IST" name="createUser" finished-at="2024-08-31T12:22:23 IST" duration-ms="372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method signature="updateUser()[pri:3, instance:samples.UsingExternalJsonFile@5a5a729f]" started-at="2024-08-31T12:22:23 IST" name="updateUser" finished-at="2024-08-31T12:22:23 IST" depends-on-methods="samples.UsingExternalJsonFile.createUser" duration-ms="337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUser -->
+        <test-method signature="deleteUser()[pri:4, instance:samples.UsingExternalJsonFile@5a5a729f]" started-at="2024-08-31T12:22:23 IST" name="deleteUser" finished-at="2024-08-31T12:22:24 IST" depends-on-methods="samples.UsingExternalJsonFile.createUser" duration-ms="358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
+      </class> <!-- samples.UsingExternalJsonFile -->
+      <class name="samples.UsingPojoClassData">
+        <test-method signature="getUserList()[pri:1, instance:samples.UsingPojoClassData@aba625]" started-at="2024-08-31T12:22:20 IST" name="getUserList" finished-at="2024-08-31T12:22:20 IST" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserList -->
+        <test-method signature="createUser()[pri:2, instance:samples.UsingPojoClassData@aba625]" started-at="2024-08-31T12:22:20 IST" name="createUser" finished-at="2024-08-31T12:22:20 IST" duration-ms="433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method signature="updateUser()[pri:3, instance:samples.UsingPojoClassData@aba625]" started-at="2024-08-31T12:22:20 IST" name="updateUser" finished-at="2024-08-31T12:22:21 IST" depends-on-methods="samples.UsingPojoClassData.createUser" duration-ms="474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUser -->
+        <test-method signature="deleteUser()[pri:4, instance:samples.UsingPojoClassData@aba625]" started-at="2024-08-31T12:22:21 IST" name="deleteUser" finished-at="2024-08-31T12:22:21 IST" depends-on-methods="samples.UsingPojoClassData.createUser" duration-ms="463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
+      </class> <!-- samples.UsingPojoClassData -->
+      <class name="samples.PathAndQueryParameter">
+        <test-method signature="getSingleUser()[pri:0, instance:samples.PathAndQueryParameter@7a6d7e92]" started-at="2024-08-31T12:22:19 IST" name="getSingleUser" finished-at="2024-08-31T12:22:20 IST" duration-ms="445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSingleUser -->
+      </class> <!-- samples.PathAndQueryParameter -->
+      <class name="samples.HeadersDemo">
+        <test-method signature="getHeaders()[pri:0, instance:samples.HeadersDemo@50378a4]" started-at="2024-08-31T12:22:16 IST" name="getHeaders" finished-at="2024-08-31T12:22:16 IST" duration-ms="623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getHeaders -->
+        <test-method signature="getHeadersvalue()[pri:0, instance:samples.HeadersDemo@50378a4]" started-at="2024-08-31T12:22:16 IST" name="getHeadersvalue" finished-at="2024-08-31T12:22:17 IST" duration-ms="644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getHeadersvalue -->
+        <test-method signature="logprint()[pri:0, instance:samples.HeadersDemo@50378a4]" started-at="2024-08-31T12:22:17 IST" name="logprint" finished-at="2024-08-31T12:22:18 IST" duration-ms="610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logprint -->
+      </class> <!-- samples.HeadersDemo -->
+      <class name="samples.JsonSchemaValidatorDemo">
+        <test-method signature="getUsers()[pri:0, instance:samples.JsonSchemaValidatorDemo@5884a914]" started-at="2024-08-31T12:22:15 IST" name="getUsers" finished-at="2024-08-31T12:22:16 IST" duration-ms="831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUsers -->
+      </class> <!-- samples.JsonSchemaValidatorDemo -->
+      <class name="samples.Example1">
+        <test-method signature="getUserList()[pri:1, instance:samples.Example1@491b9b8]" started-at="2024-08-31T12:22:18 IST" name="getUserList" finished-at="2024-08-31T12:22:18 IST" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserList -->
+        <test-method signature="createUser()[pri:2, instance:samples.Example1@491b9b8]" started-at="2024-08-31T12:22:18 IST" name="createUser" finished-at="2024-08-31T12:22:18 IST" duration-ms="440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method signature="updateUser()[pri:3, instance:samples.Example1@491b9b8]" started-at="2024-08-31T12:22:18 IST" name="updateUser" finished-at="2024-08-31T12:22:19 IST" depends-on-methods="samples.Example1.createUser" duration-ms="508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUser -->
+        <test-method signature="deleteUser()[pri:4, instance:samples.Example1@491b9b8]" started-at="2024-08-31T12:22:19 IST" name="deleteUser" finished-at="2024-08-31T12:22:19 IST" depends-on-methods="samples.Example1.createUser" duration-ms="367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
+      </class> <!-- samples.Example1 -->
+      <class name="samples.Cookies">
+        <test-method signature="getCookies()[pri:0, instance:samples.Cookies@7b4c50bc]" started-at="2024-08-31T12:22:14 IST" name="getCookies" finished-at="2024-08-31T12:22:15 IST" duration-ms="714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCookies -->
+      </class> <!-- samples.Cookies -->
+      <class name="samples.UsingDataProviderwithoutExcelUtility">
+        <test-method signature="getUserList()[pri:1, instance:samples.UsingDataProviderwithoutExcelUtility@97e93f1]" started-at="2024-08-31T12:22:21 IST" name="getUserList" finished-at="2024-08-31T12:22:21 IST" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserList -->
+        <test-method signature="createUser(java.lang.String,java.lang.String)[pri:2, instance:samples.UsingDataProviderwithoutExcelUtility@97e93f1]" started-at="2024-08-31T12:22:23 IST" name="createUser" data-provider="getData" finished-at="2024-08-31T12:22:23 IST" duration-ms="65" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -40,27 +126,21 @@ at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(D
 at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3364)
 at com.fasterxml.jackson.databind.ObjectMapper$writeValue.call(Unknown Source)
 at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+at com.fasterxml.jackson.databind.ObjectMapper$writeValue.call(Unknown Source)
 at io.restassured.internal.mapping.Jackson2Mapper.serialize(Jackson2Mapper.groovy:53)
 at io.restassured.internal.mapping.Jackson2Mapper.serialize(Jackson2Mapper.groovy)
 at io.restassured.mapper.ObjectMapper$serialize.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
 at io.restassured.internal.mapping.ObjectMapping.serializeWithJackson2(ObjectMapping.groovy:217)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
 at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite$StaticMetaMethodSiteNoUnwrapNoCoerce.invoke(StaticMetaMethodSite.java:153)
 at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite.callStatic(StaticMetaMethodSite.java:102)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)
 at io.restassured.internal.mapping.ObjectMapping.serialize(ObjectMapping.groovy:154)
 at io.restassured.internal.mapping.ObjectMapping$serialize.call(Unknown Source)
 at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+at io.restassured.internal.mapping.ObjectMapping$serialize.call(Unknown Source)
 at io.restassured.internal.RequestSpecificationImpl.body(RequestSpecificationImpl.groovy:770)
 at samples.UsingDataProviderwithoutExcelUtility.createUser(UsingDataProviderwithoutExcelUtility.java:52)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -95,7 +175,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUser -->
-        <test-method signature="createUser(java.lang.String,java.lang.String)[pri:2, instance:samples.UsingDataProviderwithoutExcelUtility@17fc391b]" started-at="2024-08-24T12:29:14 IST" name="createUser" data-provider="getData" finished-at="2024-08-24T12:29:14 IST" duration-ms="14" status="FAIL">
+        <test-method signature="createUser(java.lang.String,java.lang.String)[pri:2, instance:samples.UsingDataProviderwithoutExcelUtility@97e93f1]" started-at="2024-08-31T12:22:23 IST" name="createUser" data-provider="getData" finished-at="2024-08-31T12:22:23 IST" duration-ms="8" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -169,7 +249,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUser -->
-        <test-method signature="createUser(java.lang.String,java.lang.String)[pri:2, instance:samples.UsingDataProviderwithoutExcelUtility@17fc391b]" started-at="2024-08-24T12:29:14 IST" name="createUser" data-provider="getData" finished-at="2024-08-24T12:29:14 IST" duration-ms="8" status="FAIL">
+        <test-method signature="createUser(java.lang.String,java.lang.String)[pri:2, instance:samples.UsingDataProviderwithoutExcelUtility@97e93f1]" started-at="2024-08-31T12:22:23 IST" name="createUser" data-provider="getData" finished-at="2024-08-31T12:22:23 IST" duration-ms="4" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -243,15 +323,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUser -->
-        <test-method signature="updateUser()[pri:3, instance:samples.UsingDataProviderwithoutExcelUtility@17fc391b]" started-at="2024-08-24T12:29:14 IST" name="updateUser" finished-at="2024-08-24T12:29:14 IST" depends-on-methods="samples.UsingDataProviderwithoutExcelUtility.createUser" duration-ms="0" status="SKIP">
+        <test-method signature="updateUser()[pri:3, instance:samples.UsingDataProviderwithoutExcelUtility@97e93f1]" started-at="2024-08-31T12:22:23 IST" name="updateUser" finished-at="2024-08-31T12:22:23 IST" depends-on-methods="samples.UsingDataProviderwithoutExcelUtility.createUser" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method samples.UsingDataProviderwithoutExcelUtility.updateUser() on instance samples.UsingDataProviderwithoutExcelUtility@17fc391b depends on not successfully finished methods 
-[samples.UsingDataProviderwithoutExcelUtility.createUser() on instance samples.UsingDataProviderwithoutExcelUtility@17fc391b]]]>
+              <![CDATA[Method samples.UsingDataProviderwithoutExcelUtility.updateUser() on instance samples.UsingDataProviderwithoutExcelUtility@97e93f1 depends on not successfully finished methods 
+[samples.UsingDataProviderwithoutExcelUtility.createUser() on instance samples.UsingDataProviderwithoutExcelUtility@97e93f1]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method samples.UsingDataProviderwithoutExcelUtility.updateUser() on instance samples.UsingDataProviderwithoutExcelUtility@17fc391b depends on not successfully finished methods 
-[samples.UsingDataProviderwithoutExcelUtility.createUser() on instance samples.UsingDataProviderwithoutExcelUtility@17fc391b]
+              <![CDATA[java.lang.Throwable: Method samples.UsingDataProviderwithoutExcelUtility.updateUser() on instance samples.UsingDataProviderwithoutExcelUtility@97e93f1 depends on not successfully finished methods 
+[samples.UsingDataProviderwithoutExcelUtility.createUser() on instance samples.UsingDataProviderwithoutExcelUtility@97e93f1]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -277,15 +357,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateUser -->
-        <test-method signature="deleteUser()[pri:4, instance:samples.UsingDataProviderwithoutExcelUtility@17fc391b]" started-at="2024-08-24T12:29:14 IST" name="deleteUser" finished-at="2024-08-24T12:29:14 IST" depends-on-methods="samples.UsingDataProviderwithoutExcelUtility.createUser" duration-ms="0" status="SKIP">
+        <test-method signature="deleteUser()[pri:4, instance:samples.UsingDataProviderwithoutExcelUtility@97e93f1]" started-at="2024-08-31T12:22:23 IST" name="deleteUser" finished-at="2024-08-31T12:22:23 IST" depends-on-methods="samples.UsingDataProviderwithoutExcelUtility.createUser" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method samples.UsingDataProviderwithoutExcelUtility.deleteUser() on instance samples.UsingDataProviderwithoutExcelUtility@17fc391b depends on not successfully finished methods 
-[samples.UsingDataProviderwithoutExcelUtility.createUser() on instance samples.UsingDataProviderwithoutExcelUtility@17fc391b]]]>
+              <![CDATA[Method samples.UsingDataProviderwithoutExcelUtility.deleteUser() on instance samples.UsingDataProviderwithoutExcelUtility@97e93f1 depends on not successfully finished methods 
+[samples.UsingDataProviderwithoutExcelUtility.createUser() on instance samples.UsingDataProviderwithoutExcelUtility@97e93f1]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method samples.UsingDataProviderwithoutExcelUtility.deleteUser() on instance samples.UsingDataProviderwithoutExcelUtility@17fc391b depends on not successfully finished methods 
-[samples.UsingDataProviderwithoutExcelUtility.createUser() on instance samples.UsingDataProviderwithoutExcelUtility@17fc391b]
+              <![CDATA[java.lang.Throwable: Method samples.UsingDataProviderwithoutExcelUtility.deleteUser() on instance samples.UsingDataProviderwithoutExcelUtility@97e93f1 depends on not successfully finished methods 
+[samples.UsingDataProviderwithoutExcelUtility.createUser() on instance samples.UsingDataProviderwithoutExcelUtility@97e93f1]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -312,6 +392,172 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </reporter-output>
         </test-method> <!-- deleteUser -->
       </class> <!-- samples.UsingDataProviderwithoutExcelUtility -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="samples.ValidatingResponse">
+        <test-method signature="getUsers3()[pri:0, instance:samples.ValidatingResponse@1a4927d6]" started-at="2024-08-31T12:22:19 IST" name="getUsers3" finished-at="2024-08-31T12:22:19 IST" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUsers3 -->
+      </class> <!-- samples.ValidatingResponse -->
+      <class name="samples.FileuploadDemo">
+        <test-method signature="MultiplefileUpload()[pri:0, instance:samples.FileuploadDemo@4d15107f]" started-at="2024-08-31T12:22:12 IST" name="MultiplefileUpload" finished-at="2024-08-31T12:22:13 IST" duration-ms="1321" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+JSON path [0].fileName1 doesn't match.
+Expected: Test1.txt
+  Actual: null
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+JSON path [0].fileName1 doesn't match.
+Expected: Test1.txt
+  Actual: null
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+at samples.FileuploadDemo.MultiplefileUpload(FileuploadDemo.java:53)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MultiplefileUpload -->
+        <test-method signature="SinglefileUpload()[pri:0, instance:samples.FileuploadDemo@4d15107f]" started-at="2024-08-31T12:22:13 IST" name="SinglefileUpload" finished-at="2024-08-31T12:22:14 IST" duration-ms="1102" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+JSON path fileName doesn't match.
+Expected: Text1.txt
+  Actual: null
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+JSON path fileName doesn't match.
+Expected: Text1.txt
+  Actual: null
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+at samples.FileuploadDemo.SinglefileUpload(FileuploadDemo.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SinglefileUpload -->
+      </class> <!-- samples.FileuploadDemo -->
+      <class name="samples.AuthorizationTest">
+        <test-method signature="basicAuthorization()[pri:0, instance:samples.AuthorizationTest@790da477]" started-at="2024-08-31T12:22:04 IST" name="basicAuthorization" finished-at="2024-08-31T12:22:09 IST" duration-ms="5228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basicAuthorization -->
+        <test-method signature="digestAuthorization()[pri:0, instance:samples.AuthorizationTest@790da477]" started-at="2024-08-31T12:22:09 IST" name="digestAuthorization" finished-at="2024-08-31T12:22:11 IST" duration-ms="1674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- digestAuthorization -->
+        <test-method signature="preemptiveAuthorization()[pri:0, instance:samples.AuthorizationTest@790da477]" started-at="2024-08-31T12:22:11 IST" name="preemptiveAuthorization" finished-at="2024-08-31T12:22:12 IST" duration-ms="1209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preemptiveAuthorization -->
+      </class> <!-- samples.AuthorizationTest -->
+      <class name="samples.FakerClassDataGenerate">
+        <test-method signature="fakerDataGeneration()[pri:0, instance:samples.FakerClassDataGenerate@4b520ea8]" started-at="2024-08-31T12:22:24 IST" name="fakerDataGeneration" finished-at="2024-08-31T12:22:24 IST" duration-ms="313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fakerDataGeneration -->
+      </class> <!-- samples.FakerClassDataGenerate -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
